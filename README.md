@@ -8,5 +8,4 @@ Then coding_test.html file should be created in the same folder
 
 
 Javascript.html:
-This Javascript_solution.html will directly show the deisred result.
-Please use "display web source code" to check the code.
+javascript.html gives a javascript solution of this test. Your can view the code in any text editor and see the result by opening this file via any web browser
