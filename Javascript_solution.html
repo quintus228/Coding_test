@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<body>
+ 
+<div id = "root"></div>
+ 
+<script>
+
+    var name = "Chenkun"
+    var xhttp = new XMLHttpRequest();
+    var title
+    var content
+    xhttp.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+            var myJSON = this.responseText;
+            var myOBJ = JSON.parse(myJSON);
+            title = myOBJ.title;
+            content = myOBJ.content;
+        }  
+    };
+    xhttp.open("POST", "https://www.yjezimoc.com/test/helloworld?name="+name,false);
+    xhttp.send();
+    document.getElementById("root").innerHTML = "<h1>" + title + "</h1>" + "\n<p>"+content+"</p>";
+
+
+</script>
+ 
+</body>
+</html> 
