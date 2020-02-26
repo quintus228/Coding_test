@@ -1,7 +1,7 @@
 # Coding_test
 
 coding_test.py:
-This Python script(coding_test.py) received data from the end point and wrote to a html file containing desired ouput.
+This Python script(coding_test.py) receives data from the end point and writes to a html file containing desired ouput.
 Run it:
 $ python coding_test.py
 Then coding_test.html file should be created in the same folder
